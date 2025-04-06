@@ -1,0 +1,72 @@
+/* Resetare stiluri */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setări globale */
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Secțiunea Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Fundalul hero (imagine de fundal care va avea efectul parallax) */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg'); /* înlocuiește cu calea imaginii tale */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Contenutul secțiunii hero */
+.hero-content {
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Design responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
